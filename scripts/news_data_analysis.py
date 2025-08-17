@@ -6,6 +6,11 @@ import nltk
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 import string
+print("Downloading NLTK resources...")
+nltk.download('punkt')
+nltk.download('punkt_tab')
+nltk.download('stopwords')
+print("NLTK resources downloaded successfully.")
 class NewsDataAnalysis:
 
     """ A class for analyzing financial news headlines and articles, with a focus on
@@ -32,11 +37,7 @@ class NewsDataAnalysis:
               "Partnerships / Collaborations": ["partnership", "collaboration", "deal", "alliance", "joint venture"],
               "Operations / Production": ["shipment", "supply", "production", "factory", "manufacturing", "shortage"]
           }
-        print("Downloading NLTK resources...")
-        nltk.download('punkt')
-        nltk.download('punkt_tab')
-        nltk.download('stopwords')
-        print("NLTK resources downloaded successfully.")
+        
 
 
     def filter_by_stock(self, stock_symbol):
