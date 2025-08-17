@@ -1,0 +1,8 @@
+pandas
+PyPortfolioOpt
+seaborn
+textblob
+matplotlib
+ntk
+scikit-learn
+TA-Lib 
