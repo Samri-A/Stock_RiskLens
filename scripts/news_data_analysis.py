@@ -84,12 +84,16 @@ class NewsDataAnalysis:
         plt.show()
 
        
-        self.df["date"].resample("M").size().plot(title="Monthly Publication Trend")
+        self.df["month"] = self.df['date'].dt.month
+        group_by_month = self.df.groupby("month").size()
+        group_by_month.plot(title="Monthly Publication Trend")
         plt.xlabel("Date")
         plt.ylabel("Number of Articles")
         plt.show()
 
-        self.df["date"].resample("Y").size().plot(title="Yearly Publication Trend")
+        self.df['year'] = self.df['date'].dt.year
+        group_by_year = self.df.groupby("year").size()
+        group_by_year.plot(title="Yearly Publication Trend")
         plt.xlabel("Date")
         plt.ylabel("Number of Articles")
         plt.show()
