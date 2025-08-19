@@ -1,4 +1,3 @@
-
 from sklearn.preprocessing import LabelEncoder, MinMaxScaler  
 def preprocess_data(df):
     scaler = MinMaxScaler()

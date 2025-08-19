@@ -6,3 +6,6 @@ matplotlib
 ntk
 scikit-learn
 TA-Lib 
+tensorflow
+unicorn
+fastapi
