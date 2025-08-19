@@ -10,3 +10,4 @@ def preprocess_data(df):
     df["topic"] = encoder.fit_transform(df["topic"])
     df["sentiment_category"] = encoder.fit_transform(df["sentiment_category"])
     return df
+
