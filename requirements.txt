@@ -7,5 +7,6 @@ ntk
 scikit-learn
 TA-Lib 
 tensorflow
-unicorn
+uvicorn
 fastapi
+pydantic
